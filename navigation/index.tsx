@@ -19,8 +19,6 @@ import NotFoundScreen from '../screens/NotFoundScreen';
 import PortfolioScreen from '../screens/PortfolioScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import RankingScreen from '../screens/RankingScreen';
-import TabOneScreen from '../screens/TabOneScreen';
-import TabTwoScreen from '../screens/TabTwoScreen';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
 

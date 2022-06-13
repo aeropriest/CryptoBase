@@ -7,10 +7,6 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'white',        
     },
-    balanceContainer:{
-        width:'100%',
-        marginVertical: 20,
-    },
     Image:{
         height: 120,
         resizeMode: "contain",    
@@ -20,14 +16,8 @@ const styles = StyleSheet.create({
         fontSize: 18,
         textAlign: 'center',
         color: 'black',
+        fontWeight: 'bold'        
     },
-    balance:{
-        marginVertical: 5,
-        fontSize: 28,
-        textAlign: 'center',
-        color: '#555',
-        fontWeight: 'bold',
-    }
 })
 
 export default styles;
