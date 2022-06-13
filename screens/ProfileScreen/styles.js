@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',        
     },
     Image:{
-        height: 120,
+        height: 150,
         resizeMode: "contain",    
         },
     label:{
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
         textAlign: 'center',
         color: 'black',
-        fontWeight: 'bold'
+        fontWeight: 'bold'        
     },
     userContainer:{
         flexDirection: 'row',
@@ -25,17 +25,23 @@ const styles = StyleSheet.create({
         height: 50,
         marginVertical: 5 ,
         alignItems: 'center',
+        width: '100%',
     },
-    image:{
-        height: 50,
-        width: 50,
-        marginRight: 10
+    userImage:{
+        height: 100,
+        width: 100,
+        marginRight: 10,
+        borderRadius: 50,
     },
     left:{
         flexDirection: 'row',
         alignItems: 'center',
     },
     name:{
+        fontWeight: 'bold',
+        marginBottom: 5,
+    },
+    email:{
         fontWeight: 'bold',
         marginBottom: 5,
     },
@@ -46,8 +52,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: '600',
         marginBottom: 5,
-    },
-
+    },    
 })
 
 export default styles;
