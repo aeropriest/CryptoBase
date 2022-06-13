@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
         
     },
     Image:{
-        height: '100px',
+        height: '45%',
         aspectRatio: 1,        
         },
 
