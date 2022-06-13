@@ -28,30 +28,36 @@ const styles = StyleSheet.create({
         width: '100%',
     },
     userImage:{
+        marginTop: 20,
         height: 100,
         width: 100,
         marginRight: 10,
         borderRadius: 50,
+        alignItems: 'center',
     },
     left:{
         flexDirection: 'row',
         alignItems: 'center',
     },
     name:{
-        fontWeight: 'bold',
+        marginTop: 20,
+        fontSize: 30,
+        fontWeight: 'regular',
         marginBottom: 5,
     },
     email:{
         fontWeight: 'bold',
         marginBottom: 5,
+        marginTop: 5,
     },
     symbol:{
         color: '#555'
     },
-    value :{
-        fontSize: 18,
+    netWorth :{
+        fontSize: 28,
         fontWeight: '600',
         marginBottom: 5,
+        marginTop: 5,
     },    
 })
 
