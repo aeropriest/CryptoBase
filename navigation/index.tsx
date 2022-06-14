@@ -15,6 +15,7 @@ import useColorScheme from '../hooks/useColorScheme';
 import CoinDetailsScreen from '../screens/CoinDetailsScreen';
 import CoinExchangeScreen from '../screens/CoinExchange';
 import HomeScreen from '../screens/HomeScreen';
+import WelcomeScreen from '../screens/WelcomeScreen';
 import MarketScreen from '../screens/MarketScreen';
 import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
@@ -44,6 +45,14 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 function RootNavigator() {
   return (
     <Stack.Navigator>
+        <Stack.Screen 
+        name="Welcome" 
+        component={WelcomeScreen}
+        options={{
+          headerShown: false
+        }}
+        />
+
       <Stack.Screen 
         name="Root" 
         component={BottomTabNavigator} 
