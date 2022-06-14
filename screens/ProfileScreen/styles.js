@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     },
     netWorth :{
         fontSize: 28,
-        fontWeight: '600',
+        fontWeight: 'bold',
         marginBottom: 5,
         marginTop: 5,
     },    

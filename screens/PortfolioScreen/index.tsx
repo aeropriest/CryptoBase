@@ -70,7 +70,6 @@ const portfolioCoins = [
         amount: 88.88,
         valueUSD: 88.88
     },
-
 ]
  
 const PortfolioScreen = ( ) => {

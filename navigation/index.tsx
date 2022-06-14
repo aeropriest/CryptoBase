@@ -12,6 +12,7 @@ import { ColorSchemeName, Pressable } from 'react-native';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
+import CoinDetailsScreen from '../screens/CoinDetailsScreen';
 import HomeScreen from '../screens/HomeScreen';
 import MarketScreen from '../screens/MarketScreen';
 import ModalScreen from '../screens/ModalScreen';
@@ -42,11 +43,18 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 function RootNavigator() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Root" component={BottomTabNavigator} options={{ headerShown: false }} />
+      <Stack.Screen 
+        name="Root" 
+        component={BottomTabNavigator} 
+        options={{ headerShown: false }} />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
-      <Stack.Group screenOptions={{ presentation: 'modal' }}>
-        <Stack.Screen name="Modal" component={ModalScreen} />
-      </Stack.Group>
+      <Stack.Screen 
+        name="CoinDetails" 
+        component={CoinDetailsScreen}
+        options={{
+          title: "Price Data"
+        }}
+        />
     </Stack.Navigator>
   );
 }
@@ -106,11 +114,8 @@ function BottomTabNavigator() {
           title: 'Profile',
           tabBarIcon: ({ color }) => <FontAwesome name="user" size={iconSize} color={color} />,
         }}
-      />
-
-
-
-    </BottomTab.Navigator>
+        />
+        </BottomTab.Navigator>
   );
 }
 
