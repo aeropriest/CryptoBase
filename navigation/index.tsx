@@ -13,6 +13,7 @@ import { ColorSchemeName, Pressable } from 'react-native';
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import CoinDetailsScreen from '../screens/CoinDetailsScreen';
+import CoinExchangeScreen from '../screens/CoinExchange';
 import HomeScreen from '../screens/HomeScreen';
 import MarketScreen from '../screens/MarketScreen';
 import ModalScreen from '../screens/ModalScreen';
@@ -55,6 +56,14 @@ function RootNavigator() {
           title: "Price Data"
         }}
         />
+        <Stack.Screen 
+        name="CoinExchange" 
+        component={CoinExchangeScreen}
+        options={{
+          title: "Coin Exchange"
+        }}
+        />
+ 
     </Stack.Navigator>
   );
 }

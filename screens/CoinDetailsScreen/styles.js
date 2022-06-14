@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
         marginBottom: 5,      
     },
     value:{
-        fontSize: 24,
+        fontSize: 18,
     },
     valueContainer:{
         alignItems: 'center',
