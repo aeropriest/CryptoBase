@@ -3,6 +3,48 @@ import styles from './styles'
 import { View, Text, Image, Pressable } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import PercentageChange from "../../components/PercentageChange";
+import CoinPriceGraph from "../../components/CoinPriceGraph";
+
+const historyString = JSON.stringify( [
+    188.92,
+    288.92,
+    388.92,
+    488.92,
+    588.92,
+    688.92,
+    788.92,
+    888.92,
+    988.92,
+    188.92,
+    288.92,
+    388.92,
+    488.92,
+    588.92,
+    688.92,
+    788.92,
+    888.92,
+    988.92,
+    188.92,
+    288.92,
+    388.92,
+    488.92,
+    588.92,
+    688.92,
+    788.92,
+    888.92,
+    988.92,
+    188.92,
+    288.92,
+    388.92,
+    488.92,
+    588.92,
+    688.92,
+    788.92,
+    888.92,
+    988.92
+])
+
+
 const CoinDetailsScreen = (props) => {
 
     const [coinData, setCoinData] = useState({
@@ -58,6 +100,8 @@ const CoinDetailsScreen = (props) => {
                     </View>
                 </View>
             </View>
+
+            <CoinPriceGraph dataString={historyString}/>
 
             <View style={styles.row}>
                 <Text>Position</Text>
