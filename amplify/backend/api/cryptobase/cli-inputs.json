@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "cryptobase",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/ashokjaiswal/Development/react-native-apps/CryptoBase/amplify/backend/api/cryptobase/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}
