@@ -6,11 +6,11 @@ const googleButtonImage =  require('../../assets/images/google-button.png');
 
 const WelcomeScreen = () => {
     const signInGoogle = () => {
-
+        console.warn('sign in pressed')
     }
     return (  
         <View style={styles.root}>
-            <Image style={styles.image} source={image} />
+        <Image style={styles.image} source={image} />
             <Text style={styles.header1}>Welcome to CryptoBase</Text>
             <Text  style={styles.header2}>Invest virtual $1000 and learn to trade in crypto</Text>
             <Pressable onPress={signInGoogle} style={styles.googleButton}>

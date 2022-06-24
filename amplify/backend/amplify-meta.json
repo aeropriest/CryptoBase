@@ -1,0 +1,166 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cryptobase-dev-112550-authRole",
+      "UnauthRoleArn": "arn:aws:iam::747805852954:role/amplify-cryptobase-dev-112550-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::747805852954:role/amplify-cryptobase-dev-112550-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cryptobase-dev-112550-deployment",
+      "UnauthRoleName": "amplify-cryptobase-dev-112550-unauthRole",
+      "StackName": "amplify-cryptobase-dev-112550",
+      "StackId": "arn:aws:cloudformation:us-east-1:747805852954:stack/amplify-cryptobase-dev-112550/5adfbd40-f36d-11ec-8f87-0a4a657cbf05",
+      "AmplifyAppId": "d3o1mqq3luu8y4",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-cryptobase-dev-112550-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    }
+  },
+  "auth": {
+    "userPoolGroups": {
+      "service": "Cognito-UserPool-Groups",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "auth",
+          "resourceName": "cryptobasee002e5b5e002e5b5",
+          "attributes": [
+            "UserPoolId",
+            "AppClientIDWeb",
+            "AppClientID",
+            "IdentityPoolId"
+          ]
+        }
+      ],
+      "userPoolGroups": {
+        "service": "Cognito-UserPool-Groups",
+        "providerPlugin": "awscloudformation",
+        "dependsOn": [
+          {
+            "category": "auth",
+            "resourceName": "cryptobasee002e5b5e002e5b5",
+            "attributes": [
+              "UserPoolId",
+              "AppClientIDWeb",
+              "AppClientID",
+              "IdentityPoolId"
+            ]
+          }
+        ]
+      },
+      "lastPushTimeStamp": "2022-06-24T04:24:03.152Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cryptobase-dev-112550-deployment/amplify-cfn-templates/auth/userPoolGroups-cloudformation-template.json",
+        "logicalId": "authuserPoolGroups"
+      },
+      "output": {
+        "AdminGroupRole": "arn:aws:iam::747805852954:role/us-east-1_Ti8Se7vjk-AdminGroupRole"
+      },
+      "lastPushDirHash": "5G4uAlMxN8rsFD1jyeLTya9ahFM="
+    },
+    "cryptobasee002e5b5e002e5b5": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "cryptobasee002e5b5e002e5b5PostConfirmation",
+          "triggerProvider": "Cognito",
+          "attributes": [
+            "Arn",
+            "Name"
+          ]
+        }
+      ],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [
+          "GOOGLE"
+        ],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cryptobase-dev-112550-deployment/amplify-cfn-templates/auth/cryptobasee002e5b5e002e5b5-cloudformation-template.json",
+        "logicalId": "authcryptobasee002e5b5e002e5b5"
+      },
+      "lastPushTimeStamp": "2022-06-24T04:24:04.168Z",
+      "output": {
+        "UserPoolId": "us-east-1_Ti8Se7vjk",
+        "AppClientIDWeb": "30j7i4nmkjl34n2s8pvu25goip",
+        "AppClientID": "10mbf8r8iiqd0jvebas46v3p0f",
+        "IdentityPoolId": "us-east-1:72ff04c1-9264-4a2b-ba9d-706e61635132",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:747805852954:userpool/us-east-1_Ti8Se7vjk",
+        "IdentityPoolName": "cryptobasee002e5b5_identitypool_e002e5b5__dev",
+        "UserPoolName": "cryptobasee002e5b5_userpool_e002e5b5",
+        "HostedUIDomain": "cryptobase72c4265e-72c4265e-dev",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"exp://192.168.12.48:19000/\"],\"LogoutURLs\":[\"exp://192.168.12.48:19000/\"]}"
+      },
+      "lastPushDirHash": "KO/jlBiutBmo4RDGMR0lL8VeYkw="
+    }
+  },
+  "function": {
+    "cryptobasee002e5b5e002e5b5PostConfirmation": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2022-06-24T04:20:09.736Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2022-06-24T04:20:09.938Z",
+      "distZipFilename": "cryptobasee002e5b5e002e5b5PostConfirmation-36386872777262482b47-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-cryptobase-dev-112550-deployment",
+        "s3Key": "amplify-builds/cryptobasee002e5b5e002e5b5PostConfirmation-36386872777262482b47-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cryptobase-dev-112550-deployment/amplify-cfn-templates/function/cryptobasee002e5b5e002e5b5PostConfirmation-cloudformation-template.json",
+        "logicalId": "functioncryptobasee002e5b5e002e5b5PostConfirmation"
+      },
+      "lastPushTimeStamp": "2022-06-24T04:24:04.168Z",
+      "output": {
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:747805852954:function:cryptobasee002e5b5e002e5b5PostConfirmation-dev",
+        "Name": "cryptobasee002e5b5e002e5b5PostConfirmation-dev",
+        "LambdaExecutionRole": "cryptobasee002e5b5e002e5b5PostConfirmation-dev"
+      },
+      "lastPushDirHash": "5hUycUp/IHct4EfUlX6C5EUXEt4="
+    }
+  },
+  "api": {
+    "cryptobase": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "xfy25afz45hsdb7pm5ousvhgfq",
+        "GraphQLAPIEndpointOutput": "https://eu37qmbl3be2bdypqi4qagkio4.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-arytirtsfrbevnn75lmodvkigi"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cryptobase-dev-112550-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apicryptobase"
+      },
+      "lastPushTimeStamp": "2022-06-24T04:24:03.160Z",
+      "lastPushDirHash": "GQSxU5nVlZVWPteW6FQ3DzoLZF4="
+    }
+  }
+}
