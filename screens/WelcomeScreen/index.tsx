@@ -4,9 +4,15 @@ import styles from './styles';
 const image =  require('../../assets/images/Saly-1.png');
 const googleButtonImage =  require('../../assets/images/google-button.png');
 
-const WelcomeScreen = () => {
-    const signInGoogle = () => {
+//import Amplify from 'aws-amplify'
 
+import { Auth } from 'aws-amplify';
+
+const WelcomeScreen =  () => {
+    const signInGoogle = async () => {
+        console.warn('sign in pressed now')
+        console.log("----------auth credentials are ----------", Auth.Credentials)
+        await Auth.federatedSignIn({ provider: "Google" })
     }
     return (  
         <View style={styles.root}>

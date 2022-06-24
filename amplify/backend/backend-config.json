@@ -32,7 +32,9 @@
       ],
       "customAuth": false,
       "frontendAuthConfig": {
-        "socialProviders": [],
+        "socialProviders": [
+          "GOOGLE"
+        ],
         "usernameAttributes": [],
         "signupAttributes": [
           "EMAIL"

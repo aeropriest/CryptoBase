@@ -9,14 +9,18 @@
       "UnauthRoleName": "amplify-cryptobase-dev-112550-unauthRole",
       "StackName": "amplify-cryptobase-dev-112550",
       "StackId": "arn:aws:cloudformation:us-east-1:747805852954:stack/amplify-cryptobase-dev-112550/5adfbd40-f36d-11ec-8f87-0a4a657cbf05",
-      "AmplifyAppId": "d3o1mqq3luu8y4"
+      "AmplifyAppId": "d3o1mqq3luu8y4",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-cryptobase-dev-112550-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
       "auth": {
         "cryptobasee002e5b5e002e5b5": {}
       },
       "function": {
-        "cryptobasee002e5b5e002e5b5PostConfirmation": {}
+        "cryptobasee002e5b5e002e5b5PostConfirmation": {
+          "deploymentBucketName": "amplify-cryptobase-dev-112550-deployment",
+          "s3Key": "amplify-builds/cryptobasee002e5b5e002e5b5PostConfirmation-36386872777262482b47-build.zip"
+        }
       }
     }
   }

@@ -13,3 +13,12 @@ const HomeScreen = () => {
 }
  
 export default HomeScreen;
+
+/*
+
+GraphQL transformer version: 2
+Hosted UI Endpoint: https://cryptobase72c4265e-72c4265e-dev.auth.us-east-1.amazoncognito.com/
+Test Your Hosted UI Endpoint: https://cryptobase72c4265e-72c4265e-dev.auth.us-east-1.amazoncognito.com/login?response_type=code&client_id=30j7i4nmkjl34n2s8pvu25goip&redirect_uri=exp://192.168.12.48:19000/
+
+
+*/
